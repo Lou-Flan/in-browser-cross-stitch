@@ -1,6 +1,7 @@
 * {
 	box-sizing: border-box;
-	font-family: arial;
+    font-family: arial;
+    font-size: calc(3 * var(--unit));
 	color: rgb(170, 170, 170);
 	text-align: center;
 }

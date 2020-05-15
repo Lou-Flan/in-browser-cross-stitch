@@ -2,6 +2,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: arial;
+  font-size: calc(3 * var(--unit));
   color: #aaaaaa;
   text-align: center;
 }
