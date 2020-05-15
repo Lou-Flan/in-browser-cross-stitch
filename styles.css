@@ -12558,4 +12558,61 @@ span:nth-child(2500) {
   left: calc(25 * var(--stitch));
   top: calc(55 * var(--stitch));
 }
+
+.colour-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  top: 0%;
+  width: 50vw;
+  height: 10vh;
+  margin-bottom: 10%;
+}
+
+.colour-menu * {
+  width: calc(10 * var(--unit));
+  height: calc(10 * var(--unit));
+  border-radius: 50%;
+  margin-top: calc(10 * var(--unit));
+}
+
+.colour-menu *:hover {
+  -webkit-transform: translate(-3%, -3%);
+          transform: translate(-3%, -3%);
+  -webkit-box-shadow: calc(1 * var(--unit)) calc(1 * var(--unit)) calc(2 * var(--unit)) #94b3a8;
+          box-shadow: calc(1 * var(--unit)) calc(1 * var(--unit)) calc(2 * var(--unit)) #94b3a8;
+}
+
+.colour-menu #blue {
+  background: #32c0cb;
+}
+
+.colour-menu #yellow {
+  background: #fff457;
+}
+
+.colour-menu #red {
+  background: #cb3232;
+}
+
+.colour-menu #green {
+  background: #21e68a;
+}
+
+.colour-menu #black {
+  background: black;
+}
+
+.colour-menu #clear {
+  background: var(--clearStitch);
+  border: black 3px solid;
+}
+
+.colour-menu #white {
+  background: white;
+}
 /*# sourceMappingURL=styles.css.map */
