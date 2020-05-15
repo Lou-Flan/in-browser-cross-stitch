@@ -40,3 +40,25 @@ body {
 	border: calc(8 * var(--unit)) var(--holes) solid;
 	overflow: hidden;
 }
+
+span {
+	position: absolute;
+	height: var(--stitch);
+	width: var(--stitch);
+	border-radius: 30%;
+}
+
+$row: 0;
+$col: 0;
+@for $i from 1 through 2500 {
+	@if ($i % 45 == 0) {
+		$row: $row + 1;
+		$col: 0;
+	} @else {
+		$col: $col + 1;
+	}
+	span:nth-child(#{$i}) {
+		left: calc(#{$col} * var(--stitch));
+		top: calc(#{$row} * var(--stitch));
+	}
+}
