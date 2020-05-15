@@ -19,7 +19,7 @@ body {
 	--unit: calc((var(--size) / 300) * 1vmin);
 	--cloth: hsl(48, 100%, 95%);
 	--holes: hsl(10, 20%, 50%);
-	--stitch: calc(3 * var(--unit));
+    --stitch: calc(3 * var(--unit));
 }
 
 .top {
@@ -93,17 +93,16 @@ $col: 0;
 	#red {
 		background: rgb(203, 50, 50);
   }
-  #green {
-    background: rgb(33, 230, 138);
-  }
+    #green {
+        background: rgb(33, 230, 138);
+    }
 	#black {
 		background: black;
 	}
 	#clear {
-		background: var(--clearStitch);
 		border: black 3px solid;
   }
-  #white{
-    background: white;
-  }
+    #white{
+        background: white;
+    }
 }

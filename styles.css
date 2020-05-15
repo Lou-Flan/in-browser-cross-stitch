@@ -12608,7 +12608,6 @@ span:nth-child(2500) {
 }
 
 .colour-menu #clear {
-  background: var(--clearStitch);
   border: black 3px solid;
 }
 
