@@ -1,0 +1,14 @@
+* {
+	box-sizing: border-box;
+	font-family: arial;
+	color: rgb(170, 170, 170);
+	text-align: center;
+}
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: rgb(205, 252, 236);
+}
