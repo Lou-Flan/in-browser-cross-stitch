@@ -12,3 +12,30 @@ body {
 	justify-content: center;
 	background: rgb(205, 252, 236);
 }
+
+:root {
+	--size: 150;
+	--unit: calc((var(--size) / 300) * 1vmin);
+	--cloth: hsl(48, 100%, 95%);
+	--holes: hsl(10, 20%, 50%);
+	--stitch: calc(3 * var(--unit));
+}
+
+.top {
+	margin-top: 10%;
+	border-radius: 10%;
+	height: calc(6 * var(--unit));
+	width: calc(40 * var(--unit));
+	background: var(--holes);
+}
+
+.material {
+	position: relative;
+	background: radial-gradient(var(--cloth) 90%, var(--holes));
+	background-size: var(--stitch) var(--stitch);
+	border-radius: 50%;
+	height: calc(150 * var(--unit));
+	width: calc(150 * var(--unit));
+	border: calc(8 * var(--unit)) var(--holes) solid;
+	overflow: hidden;
+}
